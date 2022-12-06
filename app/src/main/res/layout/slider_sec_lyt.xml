@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="SliderBind">
+<variable
+    name="bind"
+    type="com.taknikiniga.furnitureapp.fragments.adapter.FurnitureNstdModel.SliderSec" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="0dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:bind="@{bind.image}"
+            android:layout_height="@dimen/_150sdp" />
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="home"
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_round_home_24"></item>
+
+    <item
+        android:title="Notification"
+        android:id="@+id/navNotification"
+        android:icon="@drawable/ic_baseline_notifications_24"></item>
+
+    <item
+        android:title=""
+        android:id="@+id/navSpace"></item>
+
+    <item
+        android:title="Chat"
+        android:id="@+id/navChat"
+        android:icon="@drawable/ic_round_chat_24"></item>
+    <item
+        android:title="Profile"
+        android:id="@+id/navProfile"
+        android:icon="@drawable/ic_round_person_24"></item>
+
+</menu>

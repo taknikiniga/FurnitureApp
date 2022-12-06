@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/navOnboard">
+
+    <fragment
+        android:id="@+id/navOnboard"
+        android:name="com.taknikiniga.furnitureapp.fragments.onboarding.pages.Onboarding"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_navOnboard_to_navHome"
+            app:destination="@id/navHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.taknikiniga.furnitureapp.fragments.home.pages.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_navHome_to_navProductDetails"
+            app:destination="@id/navProductDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/navProductDetails"
+        android:name="com.taknikiniga.furnitureapp.fragments.details.pages.ProductDetails"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" />
+</navigation>
